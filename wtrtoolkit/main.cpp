@@ -18,15 +18,21 @@ string scannerSelection(){
 
     cin >> uInputInt;
     switch(uInputInt){
-    case 1: printf("Install 1");
+    case 1:
+        return "Install 1";
+        break;
 
-    case 2: printf("Install 2");
+    case 2:
+        return "Install 2";
+        break;
 
-    case 3: printf("Install 3");
+    case 3:
+        return "Install 3";
+        break;
 
-    case 4: printf("Install 4");
+    case 4:
+        return "Install 4";
 
-    return
     }
 }
 
