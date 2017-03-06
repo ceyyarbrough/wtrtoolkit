@@ -7,12 +7,10 @@ using namespace std;
 int uInputInt;
 char uInputChar;
 
-//installs scanallpro
 string scanAllPro(){
     cout<<"Scan All Pro Installed"<<endl;
 }
 
-//selects printer driver
 string scannerSelection(){
     printf("Please select the Scanner Below\n");
     printf("Fujitsu:\n");
@@ -51,22 +49,27 @@ string scannerSelection(){
     }
 }
 
+string enedsWS(){
+    return 0;
+}
 
+string bookingWS(){
+    return 0;
+}
 
-int main()
-{
-    //user instructions
-    printf("WTR Tool Kit v1.0\n");
-    printf(" \n");
-    printf("This toolkit will install drivers used for WTR installation\n");
-    printf("Please follow Instructions Carefully....");
-    printf(" \n");
-    printf(" \n");
+string casWS(){
+    return 0;
+}
 
+//installs scanallpro
+
+string workstation(){
+     //scanner process
     printf("Has Scanner been installed?\n");
     cin >> uInputChar;
 
-    if(uInputChar == 'y' || uInputChar == 'Y'){
+
+     if(uInputChar == 'y' || uInputChar == 'Y'){
         printf("Have you installed scanallpro? y/n");
         cin >> uInputChar;
         if(uInputChar == 'n' || uInputChar == 'N'){
@@ -81,6 +84,45 @@ int main()
     } else{
         printf("error");
         return 0;
+    }
+}
+
+//selects printer driver
+
+
+
+
+int main()
+{
+    //user instructions
+    printf("WTR Tool Kit v1.0\n");
+    printf(" \n");
+    printf("This toolkit will install drivers used for WTR installation\n");
+    printf("Please follow Instructions Carefully....");
+    printf(" \n");
+    printf(" \n");
+
+    printf("Which type of Computer are you installing?\n");
+    printf(" \n");
+    printf("Workstation - W");
+    printf("Eneds - E");
+    printf("Booking Station - B");
+    printf("CAS - C");
+
+    cin >> uInputChar;
+    switch(uInputChar){
+    case 'w' || 'W':
+        workstation();
+        break;
+    case 'e' || 'E';
+        enedsWS();
+        break;
+    case 'b' || or 'B';
+        printf("Please use the proved UABS software in software center.")
+        return 0;
+    case 'c' || 'C';
+        casWS();
+
     }
 
 
